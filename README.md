@@ -22,5 +22,5 @@ Competition outcomes should be stored in the "Score" column, and should reflect 
 
 
 
-C# Translation of Glicko-functions.cs includes both of the above functions, translated from R into C#. ChatGPT was used to translate the functions. 
+"C# Translation of Glicko-functions.cs" includes both of the above functions, translated from R into C#. ChatGPT was used to translate the functions. 
 These functions have not yet been tested. 
