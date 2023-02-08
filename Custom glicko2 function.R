@@ -1,11 +1,12 @@
 # Function to implement Glicko-2 rating system
-# mu: initial mean rating
-# phi: initial rating deViation
+# mu: initial mean rating player 1
+# mu2: initial mean rating player 2
+# phi: initial rating deViation player 1
+# phi2: initial rating deViation player 2
 # sigma: initial Volatility
-# RD: initial rating deViation on the Glicko-2 scale
-# outcomes: matrix with two columns representing the results of each game played
-# date: Vector of dates when each game was played
-# tau: scaling constant for RD
+# outcomes: results of each game played
+# elapsed_time1: Last timestamp player 1 competed
+# elapsed_time2: Last timestamp player 2 competed
 glicko2 <- function(mu, mu2, phi, phi2, sigma, outcomes,elapsed_time1, elapsed_time2 ) {
   tau <- 0.6
   # Step 1 
