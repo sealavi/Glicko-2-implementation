@@ -7,6 +7,7 @@ Additionally, the Glicko-2 system estimates the rating volitility of each player
 
 ```Custom glicko2 function.R``` includes two functions. 
 ```glicko2()``` implements the Glicko-2 algorithm as described by Mark Glickman https://www.glicko.net/glicko/glicko2.pdf
+
 ```Rating_calculator()``` processes input data and calls on the ```glicko2()``` functin to calculate and update the ratings, deviations, and volitilities of all players. 
 ```Rating_calculator()``` requires two arguments as inputs (data and state). "data" should be a data frame with the current player information and should contain the following columns:
 Player, Rating, DeViation, Volatility, Last_comp
