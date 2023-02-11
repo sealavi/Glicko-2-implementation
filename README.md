@@ -9,16 +9,20 @@ Additionally, the Glicko-2 system estimates the rating volitility of each player
 ```glicko2()``` implements the Glicko-2 algorithm as described by Mark Glickman https://www.glicko.net/glicko/glicko2.pdf
 
 ```Rating_calculator()``` processes input data and calls on the ```glicko2()``` functin to calculate and update the ratings, deviations, and volitilities of all players. 
-```Rating_calculator()``` requires two arguments as inputs (data and state). "data" should be a data frame with the current player information and should contain the following columns:
-Player, Rating, DeViation, Volatility, Last_comp.
+```Rating_calculator()``` requires two arguments as inputs (*data* and *state*). 
 
-"Player" should be the identity of the player, and LAst_comp should be the datetime of their most recent competition. "state" should be a data frame with the competition outcomes and should include the following columns:
-timestamp, Player1, Player2, Score
+**data** should be a data frame with the current player information and should contain the following columns:
+* *Player, Rating, DeViation, Volatility, Last_comp* .
 
-Competition outcomes should be stored in the "Score" column, and should reflect the outcome from the perspective of Player1. 
+* *Player* should be the identity of the player, and *LAst_comp* should be the datetime of their most recent competition. 
+
+**state** should be a data frame with the competition outcomes and should include the following columns:
+* *timestamp, Player1, Player2, Score* 
+
+Competition outcomes should be stored in the *Score* column, and should reflect the outcome from the perspective of Player1. 
 1 indicates that Player1 was the winner.
 0 indicates that Player1 was the looser.
-.5 indicates that the contest was a draw.
+0.5 indicates that the contest was a draw.
 
 
 
