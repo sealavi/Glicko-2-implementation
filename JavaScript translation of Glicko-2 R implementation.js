@@ -147,6 +147,13 @@ function ratingCalculator(data, state) {
   return state;
 }
 
+module.exports = {
+  glicko2,
+  ratingCalculator
+};
+
+
+
 // Example usage
 //const initState = [
 //  { Player: "a", Rating: 1500, DeViation: 200, Volatility: 0.06, Last_comp: "2023-02-05T15:14:35.000Z" },
@@ -171,9 +178,4 @@ function ratingCalculator(data, state) {
 //const updatedRatings = ratingCalculator(games, initState);
 //console.log(updatedRatings);
 
-
-module.exports = {
-  glicko2,
-  ratingCalculator
-};
 
