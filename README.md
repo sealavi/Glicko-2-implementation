@@ -25,11 +25,7 @@ Competition outcomes should be stored in the *Score* column, and should reflect 
 0.5 indicates that the contest was a draw.
 
 
-
-```C# Translation of Glicko-functions.cs``` includes both of the above functions, translated from R into C#. ChatGPT was used to translate the functions. 
-These functions have not yet been tested. 
-
-```JavaScript translation of Glicko-2 R implementation.js``` includes both of the above functions, translated from R into JavaScript. ChatGPT was used to translate the functions. These functions have not yet been tested. 
+```JavaScript translation of Glicko-2 R implementation.js``` includes both of the above functions, translated from R into JavaScript. These functions have not yet been tested. 
 
 
 Example implementation in R
